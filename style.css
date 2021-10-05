@@ -1,27 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-/* *{
+* {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+}
+
+@media (max-width: 400px){
+
+    body{
+        width: 100vw;
+        margin: auto;
+     
+    }
     
-}*/
+    .perfil-foto {
+        height: 60px;
+    }
+
+    div.titulo h1 {
+        font-size: 15px;
+    }
+
+    div.titulo h3 {
+        font-size: 12px;
+        height: 40px;
+        width: 100px;
+    }
+
+    div.tema button {
+        font-size: 8px;
+        margin-left: -8px;
+    }
+
+}
+
+@media (max-width: 650px){
+    
+    body {
+        width: 100vw;
+     
+    }
+
+    .perfil-foto {
+        height: 40px;
+    }
+
+    div.titulo h1 {
+        font-size: 15px;
+    }
+
+    div.titulo h3 {
+        font-size: 12px;
+        height: 40px;
+        width: 100px;
+    }
+
+    div.tema button {
+        font-size: 4px;
+        
+        padding: 2px;
+    }
+}
+
 
 
 body{
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to right top, #767676, #6e6f6f, #666768, #5e6060, #575958, #505251, #494b4b, #434444, #3b3c3c, #343434, #2c2c2d, #252525);
     background-repeat: no-repeat; 
-    
+    background-size: cover;
+    background-position: center top;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
 }
 
 .container {
     background: #ecf4ff;
-    margin: 20px 40px;
+    margin: 10px 60px;
     border-radius: 20px;
     box-shadow: 6px 6px 6px rgba(37, 37, 37, 0.568);
     color: #1c1c1c;
-    padding: 50px;
+    padding: 20px;
 }
 
 .cabecalho {
@@ -31,7 +92,6 @@ body{
 
 .perfil {
     display: flex;
-    
 }
 
 .perfil-foto {
@@ -67,16 +127,26 @@ body{
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right top, #c2c3c3, #b3b4b4, #a5a6a6, #979898, #898a8a);
-    margin-top: 26px;
-    padding: 20px;
+    margin: auto;
+    margin-top: 18px;
+    padding: 4px 10px;
     border-radius: 10px ;
     box-shadow: 2px 2px 4px rgba(137, 138, 138, 0.733);
+
 }
 
 .projetos-titulo {
     list-style: none;
     font-weight: 700;
     font-size: 26px;
+}
+
+.projeto-subtitulo{
+    margin-top: 40px;
+    font-weight:  700;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .projetos-item {
@@ -91,7 +161,7 @@ body{
 }
 
 .projetos-item p img {
-    margin-right: 14px;
+    padding: 10px;
 }
 
 li a {
